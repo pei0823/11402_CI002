@@ -85,3 +85,20 @@ int main()
     }
 
 }
+
+
+//更改想法 直接用ASCLL來判斷字母 
+//大寫字母 (A-Z)	65 - 90
+//小寫字母 (a-z)	97 - 122
+//數字 (0-9)	48 - 57
+int main2(){
+
+    char alphabet[26];//by ai 快速填入a-z
+    int abc[27] = { 0 };//存入a-z的次數
+    for (int i = 1; i < 27; i++) {
+        alphabet[i] = 'A' + i; 
+    }
+    
+
+
+}
