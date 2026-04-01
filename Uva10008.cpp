@@ -98,7 +98,31 @@ int main2(){
     for (int i = 1; i < 27; i++) {
         alphabet[i] = 'A' + i; 
     }
-    
+    for(int i = 0; i < 27; i++) {
+        string txt;
+        getline(cin, txt);
+        for (int j = 0; j < txt.size(); j++) {
+            if (txt[j] >= 'a' && txt[j] <= 'z') {
+                abc[txt[j] - 'a' + 1]++;
+            }
+            else if (txt[j] >= 'A' && txt[j] <= 'Z') {
+                abc[txt[j] - 'A' + 1]++;
+            }
+        }
+    }
 
+    for(int i = 0; i < 27; i++) {
+        int max = 0;
+        int nmax = 0;
+        for (int j = 1; j <= 26; j++) {
+            if (abc[j] > max) {
+                max = abc[j];
+                nmax = j;
+            }
+        }
+        if (max == 0)break;
+        cout << alphabet[nmax] << " " << max << endl;
+        abc[nmax] = 0;
+    }
 
 }
