@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
     string a,b;
-    int dp[101][101];
+    int dp[101][101];  
     while(cin>>a>>b){
         int n = a.length();
         int m = b.length();
