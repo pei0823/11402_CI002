@@ -52,4 +52,4 @@ int main()
         else if (dracou == d + 1 && loowcou == n + 1)cout << "Loowater is doomed!" << endl;
 
     }
-}
+}//11292

@@ -33,4 +33,4 @@ int main()
         cout << bigsum << endl;
 
     }
-}
+}//10954

@@ -41,4 +41,4 @@ int main()
         if (sym == 0)cout << "Non-symmetric." << endl;
         else cout << "Symmetric." << endl;
     }
-}
+}//11349

@@ -24,4 +24,4 @@ int main() {
         cout << total << endl;
     }
     return 0;
-}
+}//11389
